@@ -1,0 +1,37 @@
+.home {
+  width: 100%;
+  min-width: 1300px;
+  height: 100vh;
+}
+.home_bg_image {
+  object-fit: contain;
+}
+.home_building:hover {
+  fill: url(#gradselected);
+  fill-opacity: 0.5;
+  stroke: black;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+.home_building {
+  fill: transparent;
+  outline: none;
+  cursor: pointer;
+  fill-opacity: 0;
+  transition: all 150ms linear 0s;
+}
+.home_fadeOut {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.home_fadeIn {
+  opacity: 1;
+  transition: opacity 0.3s 0.3s;
+}
+.home_popup_bg {
+  background: linear-gradient(
+    0deg,
+    rgba(201, 214, 255, 0.9) 0%,
+    rgba(226, 226, 226, 0.9) 100%
+  );
+}
